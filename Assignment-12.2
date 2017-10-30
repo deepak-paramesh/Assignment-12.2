@@ -1,0 +1,30 @@
+
+
+object scala {
+  
+ def main(args: Array[String]): Unit = {
+   
+   var myList = List("alpha","gamma", "omega", "zeta", "beta");
+    
+   println("Length of my-List: " + myList.length); // Length of List
+   //println("Length of each list : " + myList.count(x => x.length();
+   
+   println(myList.foreach(x => x.length));
+   
+   //Problem -1 : find count of all strings with length 4
+   println("strings with length 4 : " + myList.count(x => x.length==4));
+   
+   //Problem -2 : convert the list of string to a list of integers, where each string is mapped to its
+//corresponding length
+   
+   println(myList.map(s => s.length));
+   
+   //Problem-3 : find count of all strings which contain alphabet ‘m’
+  println("count of all strings which contain alphabet ‘m’ : "+myList.count(x => x.contains('a')));
+   
+  //Problem-4 : find the count of all strings which start with the alphabet 'a'
+  println("count of all strings which start with the alphabet 'a' : " +myList.count(x => x.charAt(0)=='a'));
+  
+ }
+ 
+}
